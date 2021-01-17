@@ -1,0 +1,437 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Cover Template · Bootstrap v5.0</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cover.css">
+
+    <!-- fontawesom -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    <!-- Return to Top -->
+  <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+
+  <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+  <link href="css/arrow.css" rel="stylesheet">
+
+    
+    <script src='js/font-awesome.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src='js/ajax.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      
+
+      /* #myimage {
+            
+            background-image: url('images/myimage2.png');
+            background-repeat: no-repeat; 
+            background-size:16% 55%;
+            background-position-x: 0px;
+            background-position-y: 70px;
+            background-position-y: 70px;
+            background-blend-mode:soft-light ;
+            
+            
+      } */
+
+      /* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing {
+      margin-left: auto;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+hr { display:table-row-group;  overflow: hidden; border-style: inset; border-width: 1px;color:white;  width:inherit;}
+
+
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:gray;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:whitesmoke;
+}
+#scroll:hover {
+    background-color:black;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+
+
+  <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+  <body id="myimage" class="d-flex h-80 text-center text-white bg-dark" >
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0 my-5">Resume</h3>
+     <br>&nbsp;&nbsp;&nbsp;&nbsp;
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#Skillset">Skill Set</a>
+        <a class="nav-link" href="#Qualifications">Qualifications</a>
+        <a class="nav-link" href="#Projects">Projects</a>
+        <a class="nav-link" href="#Activities">Activities</a>
+        <a class="nav-link" href="#certificates">Certificates</a>
+        <a class="nav-link" href="#Contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <br>&nbsp;&nbsp;&nbsp;
+
+  <div class="container marketing d-flex justify-content-center" style='margin: auto;'>
+    <div class="row">
+      <div class="col-sm-12" style="margin-left: 11.555%;">
+        <img src="images/Artboard 2.png"  class="bd-placeholder-img rounded-circle " width="320" height="380" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em" style='mix-blend-mode: hue; background-blend-mode:hue;'></text></img>
+  
+        
+      </div><!-- /.col-lg-4 -->
+    </div> 
+  </div> 
+
+  <br>
+
+  <main class="px-3">
+    <h1 style="color:lightyellow;" >Mohammed Furqan</h1>
+    <div><a style="color:white" class="lead" href="mailto:md.furqan127@gmail.com">md.furqan127@gmail.com</a></div>
+    <a style="color:white" class="lead" href='tel:+918886195979'>+91 8886195979</a>
+    <p class="lead"><b>Having about an year of experience in <span style="color:yellow">WEB DEVELOPMENT & DESIGN</span> as a Freelancer</b></p>
+    <p class="lead">
+          
+      <a href="#Contact" class="btn btn-secondary fw-bold border-white bg-white" style="width:auto;">Contact</a>
+    </p>
+ 
+  </main> 
+
+
+
+ 
+<div class="container">
+  <br><br>
+</div>
+<br><br>
+
+
+ 
+
+  <hr class="featurette-divider">
+  
+ <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <h1 class='text-center my-5' id="Skillset" style="color:lightyellow;" >Skill Set</h1>
+   
+
+  <div class="container marketing d-flex justify-content-center  g-5">
+ 
+      
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-sm-3 my-5">
+          <img src="images/python.png" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="true"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+  
+          <h2>Python</h2>&nbsp;
+          <p>Installation, Working with Data Types & Operators, Flow control, Functions, Exception handling, File input & output, Web scrapping</p>
+          <p><a class="btn btn-light" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-sm-3 my-5">
+            <img src="images/django.png" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="true"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+  
+          <h2>Django</h2>&nbsp;
+          <p>Django installation, Creating Project & App, Working with Django admin panel, Creating Module(db), Reflecting Data from Module(db) using sqlite, mysql, postgreesql</p>
+          <p><a class="btn btn-light" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-sm-3 my-5">
+            <img src="images/html.png" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="true"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+  
+          <h2>UI Technologies</h2>&nbsp;
+          <p>Creating Templates Web pages from scratch using Bootstrap, Html5, CSS, JavaScript, Jquery, Imporitng external templates </p>
+          <p><a class="btn btn-light" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-sm-3 my-5">
+            <img src="images/js.png" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="true"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+    
+            <h2>JavaScript</h2>&nbsp;
+            <p>Working with JS Functionality like  Objects, Functions, Document Object Manipulation, Debugging in browser console </p>
+            <p><a class="btn btn-light" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+
+          
+      </div><!-- /.row -->
+    </div>
+
+      <br><br>
+
+      <hr class="featurette-divider">
+      <br>
+        <h1 class="my-5" id="Qualifications" style="color:lightyellow;">Qualifications</h1>
+
+      
+
+      <div class="container my-5">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h3 class="featurette-heading">Education Qualification<span class="text-muted"></span></h3>
+          <p class=" text-left" >I was a bright student during my studies as I have passed my SSC with 70%, Diploma with 68% and my Engineering degree with 61% marks, which i completed from RRS College of Engineering Patancheru 2018.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/degree.png" width="250" height="250"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+  
+        </div>
+      </div>
+  
+      <br>
+      <hr class="featurette-divider">
+      <br><br>
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Core Qualification<span class="text-muted"></span></h2><br><br>
+          <p class="lead">Multi Device web application development using Django and Flask Frameworks with Python<br></p>
+          <p class=" text-left">
+            •	Good in Photoshop working with raster design, applying gradient effects<br>
+            •	Good in logical programming and try to solve mannerly<br>
+            •	Getting the code from documentation and try to understand & solve the problems<br>
+            •	Creating and maintaining source code in effective manner using github<br>
+            •	Effectiveness as my typing skills are about 45 wpm with problem solving skills<br>
+            •	Google, Stackoverflow, Bootstrap & Github are helpfull to get the job done very quickly<br>
+            •	My Github link <a style="color:yellow;" target='_blank' href="https://www.github.com/Furqan619">www.github.com/Furqan619</a>  to access my projects remotely
+            </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/coding-2.jpg" width="300" height="300"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+  
+        </div>
+      </div>
+</div>
+
+<hr class="featurette-divider">&nbsp;
+<h2 class="my-5" id="Projects" style="color:lightyellow;">Projects</h2>
+<hr class="featurette-divider">&nbsp;
+<h2 class="my-5" id="Activities" style="color:lightyellow;">Activites</h2>
+<div class="container">
+  <div class="bg-dark p-2 rounded">
+    <h4>Fiverr Freelancing Profiles</h4>
+    
+    <div>
+    <img class="my-3" src="images/fiverr.png" alt="fiverr-image" width="80%" height="">
+  </div>
+  <a class="btn btn-sm btn-light" style="width:80%;" href="https://www.fiverr.com/furqan247" target="_blank" role="button">View Profile &raquo;</a>
+  </div>
+
+  <br>
+
+  <div class="bg-dark p-2 rounded mt-5 mb-5">
+    <h4>Upwork Profile</h4>
+    <div>
+    <img class="my-3" src="images/upwork.png" alt="fiverr-image" width="80%" height="" >
+  </div>
+    <a class="btn btn-sm btn-light" style="width:80%;"  href="https://www.upwork.com/freelancers/~0111e1187f62003dc1" target="_blank" role="button">View Profile &raquo;</a>
+  </div>
+  <br><br>
+</div>
+<hr class="featurette-divider">&nbsp;
+<h2 class="my-5 "  id="certificates" style="color:lightyellow;">Certificates</h2>
+  <div class="container">
+    <div class="album py-5 bg-dark ">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-md-3 g-3">
+          <div class="col g-5">
+            <div class="card shadow-sm p-2">
+              <img src="images/certificate-1.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="325" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+  
+              <div class="card-body">
+                
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <!-- <small class="text-muted">9 mins</small> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img src="images/certificate-2.jpg" class="bd-placeholder-img card-img-top" width="100%" height="325" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></img>
+  
+              <div class="card-body">
+                
+                <div class="d-flex justify-content-between align-items-center">
+                  
+                  <!-- <small class="text-muted">9 mins</small> -->
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+</div>
+   
+<br>
+
+<hr class="featurette-divider">&nbsp;
+<h2 class="my-5" id="Contact" style="color:lightyellow;">Contact</h2>
+
+<div class="container d-flex justify-content-center">
+  <div class="col-md-7 col-lg-8">
+    <h4 class="mb-3"></h4>
+    
+    <form class="needs-validation" novalidate action="POST" >
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            Valid first name is required.
+          </div>
+        </div>
+
+        <div class="col-sm-6 mb-3">
+          <label for="lastName" class="form-label">Email</label>
+          <div class="input-group">
+          <span class="input-group-text " >@</span>
+          <input type="text" class="form-control w-100" id="lastName" placeholder="" value="" required >
+        </div>
+          <div class="invalid-feedback">
+            Valid last name is required.
+          </div>
+        </div>
+       
+        <div class="col-12 ">
+          <label for="username" class="form-label">Message</label>
+          <div class="input-group">
+            <!-- <span class="input-group-text">@</span> -->
+            <textarea  maxlength="300" type="text" class="form-control " id="username" placeholder="Type your message" required style="height:100px;"></textarea>
+          <div class="invalid-feedback">
+              Your username is required.
+            </div>
+          </div>
+        </div>
+</div>
+</form>
+<button class="btn btn-dark mt-3" type="submit">Submit</button>
+<section class="card d-flex justify-content-center my-5 " style="width:auto;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52727.92204737125!2d78.40110412193806!3d17.389740247298025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96e9e5058e73%3A0x47d93e7b57ce6f1!2sToli%20Chowki%2C%20Hyderabad%2C%20Telangana%20500008!5e0!3m2!1sen!2sin!4v1610794106468!5m2!1sen!2sin" frameborder="0" height="200" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+</section>
+
+
+
+
+  <footer class="mt-auto text-white-50">
+    <p>Cover template form <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a> by <a href="https://twitter.com/mdo" class="text-white">@Furqan</a>.</p>
+  </footer>
+</div>
+
+
+
+
+<script>
+  
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+
+    
+  </body>
+</html>
